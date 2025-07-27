@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>文件管理 - Awesome Cloud</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📂 我的文件</h1>
+
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">上传文件</button>
+
+    <table id="fileTable">
+      <thead>
+        <tr><th>文件名</th><th>大小</th><th>操作</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
+
+<div class="pagination">
+  <button onclick="prevPage()">上一页</button>
+  <button onclick="nextPage()">下一页</button>
+</div>

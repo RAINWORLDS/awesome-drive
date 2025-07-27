@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>语言切换</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 语言切换</h1>
+    <button onclick="switchLang()">切换中/EN</button>
+  </div>
+  <script>
+    function switchLang() {
+      const current = localStorage.getItem("lang") || "zh";
+      localStorage.setItem("lang", current === "zh" ? "en" : "zh");
+      location.reload();
+    }
+  </script>
+  <script src="js/lang.js"></script>
+</body>
+</html>

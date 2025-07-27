@@ -1,0 +1,16 @@
+body {
+  background: radial-gradient(circle at top left, #0f0f0f, #000);
+  color: #00ffee;
+}
+
+input, button {
+  background: #111;
+  border: 1px solid #0ff;
+  color: #0ff;
+  padding: 10px;
+  margin: 5px;
+}
+
+hr {
+  border-color: #333;
+}

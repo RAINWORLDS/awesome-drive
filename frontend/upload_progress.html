@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>上传进度</title>
+  <style>
+    #progressBar {
+      width: 0%;
+      height: 20px;
+      background: limegreen;
+    }
+    #progressWrapper {
+      width: 100%;
+      background: #ccc;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>⏳ 上传进度</h1>
+  <input type="file" onchange="uploadWithProgress(this.files[0])" />
+  <div id="progressWrapper">
+    <div id="progressBar"></div>
+  </div>
+  <script src="js/progress_upload.js"></script>
+</body>
+</html>
